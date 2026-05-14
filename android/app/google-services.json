@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "293388346215",
+    "project_id": "flashai-99601",
+    "storage_bucket": "flashai-99601.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293388346215:android:dea864778f13ada45185c2",
+        "android_client_info": {
+          "package_name": "com.example.flashai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEou3oB6oQINtBJs4J0HjV5ndGfzMoW_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
