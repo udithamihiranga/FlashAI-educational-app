@@ -136,4 +136,4 @@ flutter build web --release
 
 ## License
 
-This project is submitted as by B.Tech ICT student at the General Sir John Kotelawala Defence University. See the [LICENSE](LICENSE) file for details.
+This project is submitted as part of a Bachelor of Science in ICT at the General Sir John Kotelawala Defence University. See the [LICENSE](LICENSE) file for details.
