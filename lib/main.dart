@@ -197,6 +197,41 @@ class _MainNavigationShellState extends State<MainNavigationShell> {
     }
   }
 
+  Widget _buildNotificationIcon(BuildContext context, int unreadCount, {required bool selected}) {
+    final theme = Theme.of(context);
+    final hasUnread = unreadCount > 0;
+
+    return Container(
+      padding: const EdgeInsets.all(8),
+      decoration: BoxDecoration(
+        color: selected ? theme.colorScheme.primary.withValues(alpha: 0.15) : null,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Stack(
+        children: [
+          Icon(
+            Icons.notifications_rounded,
+            size: 22,
+            color: selected ? theme.colorScheme.primary : null,
+          ),
+          if (hasUnread)
+            Positioned(
+              top: 2,
+              right: 2,
+              child: Container(
+                width: 8,
+                height: 8,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.red,
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
   void _onItemTapped(int index) {
     HapticFeedback.selectionClick();
     if (index != _selectedIndex) {
@@ -348,28 +383,11 @@ class _MainNavigationShellState extends State<MainNavigationShell> {
               ),
               label: 'Study',
             ),
-             NavigationDestination(
-               icon: Container(
-                 padding: const EdgeInsets.all(8),
-                 decoration: BoxDecoration(
-                   borderRadius: BorderRadius.circular(12),
-                 ),
-                 child: const Icon(Icons.notifications_rounded, size: 22),
-               ),
-               selectedIcon: Container(
-                 padding: const EdgeInsets.all(8),
-                 decoration: BoxDecoration(
-                   color: theme.colorScheme.primary.withValues(alpha: 0.15),
-                   borderRadius: BorderRadius.circular(12),
-                 ),
-                 child: Icon(
-                   Icons.notifications_rounded,
-                   size: 22,
-                   color: theme.colorScheme.primary,
-                 ),
-               ),
-               label: 'Alerts',
-             ),
+NavigationDestination(
+              icon: _buildNotificationIcon(context, unreadCount, selected: false),
+              selectedIcon: _buildNotificationIcon(context, unreadCount, selected: true),
+              label: 'Alerts',
+            ),
              NavigationDestination(
                icon: Container(
                  padding: const EdgeInsets.all(8),
