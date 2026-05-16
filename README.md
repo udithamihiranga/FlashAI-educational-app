@@ -4,7 +4,7 @@ An AI-powered study assistant application built with Flutter, designed to help s
 
 ## Features
 
-- **AI-Powered Note Generation** — Upload documents or enter text manually, and FlashAI automatically generates concise, pedagogically-sound summary notes using OpenAI.
+- **AI-Powered Note Generation** — Upload documents or enter text manually, and FlashAI automatically generates concise, pedagogically-sound summary notes using NVIDIA AI.
 - **Automatic Flashcard Creation** — Notes are automatically converted into structured flashcards optimized for spaced repetition learning.
 - **Learning Progress Tracking** — Track study sessions, flashcard review performance, and visualize your learning trajectory with detailed statistics.
 - **Daily Streak System** — Stay motivated with daily study streaks and achievement tracking.
@@ -24,7 +24,7 @@ An AI-powered study assistant application built with Flutter, designed to help s
   - Cloud Functions (serverless logic)
   - Cloud Storage (file storage)
   - FCM (push notifications)
-- **AI:** OpenAI API (GPT-3.5)
+- **AI:** NVIDIA NIM API
 - **Local Storage:** SQLite (sqflite)
 - **Notifications:** flutter_local_notifications
 
@@ -40,7 +40,7 @@ An AI-powered study assistant application built with Flutter, designed to help s
   - Cloud Functions
   - Cloud Storage
   - Firebase Cloud Messaging
-- An OpenAI API key
+- An NVIDIA API key from [build.nvidia.com](https://build.nvidia.com)
 
 ### Installation
 
@@ -58,8 +58,8 @@ An AI-powered study assistant application built with Flutter, designed to help s
 3. **Configure environment variables:**
    - Copy `.env.example` to `.env` and fill in your API keys:
      ```
-     OPENAI_API_KEY=your_openai_api_key
-     FIREBASE_WEB_API_KEY=your_firebase_web_api_key
+     NVIDIA_API_KEY=your_nvidia_api_key
+     NVIDIA_BUILD_API_KEY=your_nvidia_api_key
      ```
 
 4. **Set up Firebase:**
@@ -109,7 +109,7 @@ lib/
 │   └── shared/
 │       └── widgets/          # Reusable UI components
 ├── services/
-│   ├── api/                  # API services (OpenAI, Nvidia)
+│   ├── api/                  # API services (NVIDIA)
 │   ├── firebase/             # Firebase initialization
 │   ├── notification/         # Notification state management
 │   └── push/                 # Push notification handling
