@@ -3,7 +3,6 @@
 
 # Environment variables
 .env
-*.log
 *.pyc
 *.swp
 .DS_Store
