@@ -28,6 +28,34 @@ An AI-powered study assistant application built with Flutter, designed to help s
 - **Local Storage:** SQLite (sqflite)
 - **Notifications:** flutter_local_notifications
 
+## App Screenshots
+
+### Light Mode
+| Login | Sign Up |
+|-------|---------|
+| ![](assets/icons/screanshots/sign%20in%20page.png) | ![](assets/icons/screanshots/signup%20page.png) |
+
+| Dashboard | Progress Tracking |
+|-----------|-------------------|
+| ![](assets/icons/screanshots/studyhub.png) | ![](assets/icons/screanshots/progress%20dashboard.png) |
+
+| Create Notes | Created Notes |
+|--------------|---------------|
+| ![](assets/icons/screanshots/create%20notes.png) | ![](assets/icons/screanshots/created%20notes.png) |
+
+| Study Hub | Flashcards |
+|-----------|------------|
+| ![](assets/icons/screanshots/studyhub.png) | ![](assets/icons/screanshots/flashcards.png) |
+
+| Notifications | Settings |
+|---------------|----------|
+| ![](assets/icons/screanshots/nitifications.png) | ![](assets/icons/screanshots/settings.png) |
+
+### Dark Mode Examples
+| Dashboard | Progress Tracking Bar |
+|-----------|----------------------|
+| ![](assets/icons/screanshots/dashboard-darkmode.png) | ![](assets/icons/screanshots/progress%20dashboard.png) |
+
 ## Getting Started
 
 ### Prerequisites
